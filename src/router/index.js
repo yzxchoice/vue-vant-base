@@ -8,6 +8,12 @@ import VueRouter from 'vue-router'
 
 // 为了首屏加载快，所以首页不使用懒加载
 import Home from '../views/home'
+import Cs from '../views/harsom/coursesystem'
+import Ac from '../views/harsom/achievements'
+import Ct from '../views/harsom/contact'
+import Sv from '../views/harsom/service'
+import Comp from '../views/harsom/company'
+import Case from '../views/harsom/case'
 
 const originalPush = VueRouter.prototype.push
 
@@ -40,6 +46,54 @@ routes.push(
       component: Home,
       meta: {
         title: '首页'
+      }
+    },
+    {
+      path: '/cs',
+      name: 'cs',
+      component: Cs,
+      meta: {
+        title: '课程体系'
+      }
+    },
+    {
+      path: '/ac',
+      name: 'ac',
+      component: Ac,
+      meta: {
+        title: '学术成果'
+      }
+    },
+    {
+      path: '/ct',
+      name: 'ct',
+      component: Ct,
+      meta: {
+        title: '联系我们'
+      }
+    },
+    {
+      path: '/service',
+      name: 'service',
+      component: Sv,
+      meta: {
+        title: '产品服务'
+      }
+    },
+    {
+      path: '/company',
+      name: 'company',
+      component: Comp,
+      meta: {
+        title: '公司介绍'
+      }
+    },
+    {
+      path: '/case',
+      name: 'case',
+      component: Case,
+      meta: {
+        title: '成功案例'
       }
     },
     // 无权限页面

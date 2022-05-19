@@ -171,7 +171,7 @@ module.exports = {
         '**/tests/unit/**/*.spec.{j,t}s?(x)'
       ],
       env: {
-        jest: true
+        jest: false
       }
     }
   ]
