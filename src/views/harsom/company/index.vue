@@ -91,10 +91,7 @@ export default {
         ]
       }
     }
-  },
-  created() {},
-
-  methods: {}
+  }
 }
 </script>
 <style lang="less" scoped>
