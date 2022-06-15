@@ -31,45 +31,62 @@ export default {
 
 <style lang="less">
 .font('Alibaba-PuHuiTi-Medium');
+.van-image-preview__image {
+  background-color: #fff;
+}
 #app {
   height: 100vh;
   font-family: PingFangSC-Regular, sans-serif;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 14px;
+  // font-weight: 400;
+  line-height: 2;
+  color: @gray;
+  text-align: justify;
+  word-wrap: break-word;
   background-color: #eaf1f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: @gray;
-  font-size: 14px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  // font-weight: 400;
-  line-height: 2;
-  text-align: justify;
-  word-wrap: break-word;
+  .van-image-preview__image {
+    background-color: #fff;
+  }
   .van-swipe__indicator {
     width: 10px;
     height: 4px;
-    border-radius: 0;
     background-color: #d8d8d8;
+    border-radius: 8px;
   }
   .van-swipe__indicator--active {
     background-color: #26b1f2;
+    opacity: 1;
+    border-radius: 8px;
+  }
+  .teacher-swipe .van-swipe__indicator {
+    width: 4px;
+  }
+  .teacher-swipe .van-swipe__indicator--active {
+    width: 20px;
+  }
+  .teacher-swipe .van-swipe__indicator--active {
+    background-color: #4860e0;
     opacity: 1;
   }
   .video-js {
     width: 100%;
     height: auto;
-    padding-bottom: 75%;
+    padding-bottom: 56%;
     margin: 16px 0;
     overflow: hidden;
     border-radius: 10px;
   }
   .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
     width: 1.63332em;
     height: 1.63332em;
-    border-radius: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     border: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -93,8 +110,8 @@ p {
   background-color: transparent;
 }
 .van-tab.van-tab--active {
-  background-color: #2b71fa;
   color: #ffffff;
+  background-color: #2b71fa;
   border-radius: 4px;
   .van-tab__text {
     color: #ffffff;
@@ -107,8 +124,8 @@ p {
 .van-tab .van-tab__text {
   // margin: 15px 16px;
   font-size: 12px;
-  color: #6e6f71;
   font-weight: 500;
+  color: #6e6f71;
 }
 .van-tabs .van-tabs__line {
   background-color: transparent;

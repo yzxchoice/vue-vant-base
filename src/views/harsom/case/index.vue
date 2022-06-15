@@ -1,25 +1,25 @@
 <template>
   <div class="home">
-    <img src="../../../assets/case/成功案例头图.png" alt="" />
+    <img src="../../../assets/case/成功案例头图@2x.png" alt="" />
 
     <div class="title">
-      <img src="../../../assets/case/校园案例.png" alt="" />
+      <img src="../../../assets/case/校园案例@2x.png" alt="" />
     </div>
 
     <div class="card">
       <p>
         迪乐姆针对幼教、普教的创新教育场景，以提升学⽣不同阶段的创新素养为⽬标，⽤专业的课程、完善的服务，推动学校素质教育发展，为国家培养创新型⼈才做贡献。截止到2021年，迪乐姆已为3000多所学校、100000多个家庭提供优质的素质教育服务。
       </p>
-      <img src="../../../assets/case/4个图标.png" alt="" class="feature" />
+      <img src="../../../assets/case/4个图标@2x.png" alt="" class="feature" />
 
       <div class="titleimg">
-        <img src="../../../assets/case/编组 5.png" alt="" />
+        <img src="../../../assets/case/编组 5@2x.png" alt="" />
       </div>
       <p>立足上海，辐射全国，用户遍及20余个省市</p>
-      <img src="../../../assets/case/案例地图.png" alt="" class="feature" />
+      <img src="../../../assets/case/案例地图@2x.png" alt="" class="feature" />
     </div>
     <div class="title">
-      <img src="../../../assets/case/案例名单.png" alt="" />
+      <img src="../../../assets/case/案例名单@2x.png" alt="" />
     </div>
     <van-tabs v-model="active">
       <van-tab title="华东区">
@@ -27,7 +27,7 @@
           <div class="header">上海</div>
           <div
             v-for="(item, index) in shanghai"
-            v-bind:key="'shanghai' + index"
+            :key="'shanghai' + index"
             class="item"
           >
             <i></i>
@@ -36,7 +36,7 @@
           <div class="header">浙江</div>
           <div
             v-for="(item, index) in zhejiang"
-            v-bind:key="'zhejiang' + index"
+            :key="'zhejiang' + index"
             class="item"
           >
             <i></i>
@@ -45,7 +45,7 @@
           <div class="header">江苏</div>
           <div
             v-for="(item, index) in jiangsu"
-            v-bind:key="'jiangsu' + index"
+            :key="'jiangsu' + index"
             class="item"
           >
             <i></i>
@@ -54,7 +54,7 @@
           <div class="header">安徽</div>
           <div
             v-for="(item, index) in anhui"
-            v-bind:key="'anhui' + index"
+            :key="'anhui' + index"
             class="item"
           >
             <i></i>
@@ -63,7 +63,7 @@
           <div class="header">江西</div>
           <div
             v-for="(item, index) in jiangxi"
-            v-bind:key="'jiangxi' + index"
+            :key="'jiangxi' + index"
             class="item"
           >
             <i></i>
@@ -72,7 +72,7 @@
           <div class="header">山东</div>
           <div
             v-for="(item, index) in shandong"
-            v-bind:key="'shandong' + index"
+            :key="'shandong' + index"
             class="item"
           >
             <i></i>
@@ -81,7 +81,7 @@
           <div class="header">福建</div>
           <div
             v-for="(item, index) in fujian"
-            v-bind:key="'fujian' + index"
+            :key="'fujian' + index"
             class="item"
           >
             <i></i>
@@ -94,7 +94,7 @@
           <div class="header">内蒙古</div>
           <div
             v-for="(item, index) in neimenggu"
-            v-bind:key="'neimenggu' + index"
+            :key="'neimenggu' + index"
             class="item"
           >
             <i></i>
@@ -103,7 +103,16 @@
           <div class="header">山西</div>
           <div
             v-for="(item, index) in shanxi"
-            v-bind:key="'shanxi' + index"
+            :key="'shanxi' + index"
+            class="item"
+          >
+            <i></i>
+            <span>{{ item }}</span>
+          </div>
+          <div class="header">河北</div>
+          <div
+            v-for="(item, index) in hebei"
+            :key="'hebei' + index"
             class="item"
           >
             <i></i>
@@ -116,7 +125,7 @@
           <div class="header">河南</div>
           <div
             v-for="(item, index) in henan"
-            v-bind:key="'henan' + index"
+            :key="'henan' + index"
             class="item"
           >
             <i></i>
@@ -125,7 +134,7 @@
           <div class="header">湖南</div>
           <div
             v-for="(item, index) in hunan"
-            v-bind:key="'hunan' + index"
+            :key="'hunan' + index"
             class="item"
           >
             <i></i>
@@ -134,7 +143,7 @@
           <div class="header">湖北</div>
           <div
             v-for="(item, index) in hubei"
-            v-bind:key="'hubei' + index"
+            :key="'hubei' + index"
             class="item"
           >
             <i></i>
@@ -147,7 +156,7 @@
           <div class="header">宁夏</div>
           <div
             v-for="(item, index) in ningxia"
-            v-bind:key="'ningxia' + index"
+            :key="'ningxia' + index"
             class="item"
           >
             <i></i>
@@ -156,7 +165,7 @@
           <div class="header">甘肃</div>
           <div
             v-for="(item, index) in gansu"
-            v-bind:key="'gansu' + index"
+            :key="'gansu' + index"
             class="item"
           >
             <i></i>
@@ -165,7 +174,7 @@
           <div class="header">新疆</div>
           <div
             v-for="(item, index) in xinjiang"
-            v-bind:key="'xinjiang' + index"
+            :key="'xinjiang' + index"
             class="item"
           >
             <i></i>
@@ -174,7 +183,7 @@
           <div class="header">陕西</div>
           <div
             v-for="(item, index) in shanerxi"
-            v-bind:key="'shanerxi' + index"
+            :key="'shanerxi' + index"
             class="item"
           >
             <i></i>
@@ -187,7 +196,7 @@
           <div class="header">贵州</div>
           <div
             v-for="(item, index) in guizhou"
-            v-bind:key="'guizhou' + index"
+            :key="'guizhou' + index"
             class="item"
           >
             <i></i>
@@ -196,7 +205,7 @@
           <div class="header">四川</div>
           <div
             v-for="(item, index) in sichuan"
-            v-bind:key="'sichuan' + index"
+            :key="'sichuan' + index"
             class="item"
           >
             <i></i>
@@ -205,7 +214,7 @@
           <div class="header">重庆</div>
           <div
             v-for="(item, index) in chongqing"
-            v-bind:key="'chongqing' + index"
+            :key="'chongqing' + index"
             class="item"
           >
             <i></i>
@@ -214,7 +223,25 @@
           <div class="header">云南</div>
           <div
             v-for="(item, index) in yunnan"
-            v-bind:key="'yunnan' + index"
+            :key="'yunnan' + index"
+            class="item"
+          >
+            <i></i>
+            <span>{{ item }}</span>
+          </div>
+          <div class="header">西 藏</div>
+          <div
+            v-for="(item, index) in xizang"
+            :key="'xizang' + index"
+            class="item"
+          >
+            <i></i>
+            <span>{{ item }}</span>
+          </div>
+          <div class="header">广 西</div>
+          <div
+            v-for="(item, index) in guangxi"
+            :key="'guangxi' + index"
             class="item"
           >
             <i></i>
@@ -227,7 +254,25 @@
           <div class="header">吉林</div>
           <div
             v-for="(item, index) in jilin"
-            v-bind:key="'jilin' + index"
+            :key="'jilin' + index"
+            class="item"
+          >
+            <i></i>
+            <span>{{ item }}</span>
+          </div>
+          <div class="header">黑龙江</div>
+          <div
+            v-for="(item, index) in heilongjiang"
+            :key="'heilongjiang' + index"
+            class="item"
+          >
+            <i></i>
+            <span>{{ item }}</span>
+          </div>
+          <div class="header">辽 宁</div>
+          <div
+            v-for="(item, index) in liaoning"
+            :key="'liaoning' + index"
             class="item"
           >
             <i></i>
@@ -235,46 +280,45 @@
           </div>
         </div>
       </van-tab>
-      <van-tab title="其他">
+      <!-- <van-tab title="其他">
         <div class="casecard">
           <div class="header">其他</div>
-          <div
-            v-for="(item, index) in qita"
-            v-bind:key="'qita' + index"
-            class="item"
-          >
+          <div v-for="(item, index) in qita" :key="'qita' + index" class="item">
             <i></i>
             <span>{{ item }}</span>
           </div>
         </div>
-      </van-tab>
+      </van-tab> -->
     </van-tabs>
 
     <div class="title">
-      <img src="../../../assets/case/案例展示.png" alt="" />
+      <img src="../../../assets/case/案例展示@2x.png" alt="" />
     </div>
     <div class="title casetext">
-      <img src="../../../assets/case/一站式文字.png" alt="" />
+      <img src="../../../assets/case/一站式文字备份@2x.png" alt="" />
     </div>
     <div>
       <van-swipe class="my-swipe" :loop="false" :width="320" :height="300">
         <van-swipe-item>
-          <img src="../../../assets/case/编组 41.png" alt="" />
+          <img src="../../../assets/case/编组 41@2x.png" alt="" />
         </van-swipe-item>
         <van-swipe-item>
-          <img src="../../../assets/case/编组 41.png" alt="" />
+          <img src="../../../assets/case/编组 41备份@2x.png" alt="" />
         </van-swipe-item>
         <van-swipe-item>
-          <img src="../../../assets/case/编组 41.png" alt="" />
+          <img src="../../../assets/case/编组 41备份 2@2x.png" alt="" />
         </van-swipe-item>
         <van-swipe-item>
-          <img src="../../../assets/case/编组 41.png" alt="" />
+          <img src="../../../assets/case/编组 41备份 4@2x.png" alt="" />
+        </van-swipe-item>
+        <van-swipe-item>
+          <img src="../../../assets/case/编组 41备份 5@2x.png" alt="" />
         </van-swipe-item>
       </van-swipe>
     </div>
 
     <div class="copyright">
-      <img src="../../../assets/coursesystem/copyright.png" alt="" />
+      <img src="../../../assets/achievements/底部vi显示备份 3@2x.png" alt="" />
     </div>
   </div>
 </template>
@@ -520,7 +564,12 @@ export default {
         '拉萨市北京中学',
         '虎林职业高中',
         '鸡西市虎林第五小学'
-      ]
+      ],
+      hebei: ['邯郸市荀子小学'],
+      heilongjiang: ['鸡西市虎林第五小学', '虎林职业高中'],
+      liaoning: ['锦州市现代服务学校'],
+      xizang: ['林芝市第一中学', '拉萨市北京中学'],
+      guangxi: ['邯郸市荀子小学']
     }
   },
   created() {},
@@ -537,9 +586,9 @@ export default {
     margin: 10px 0 10px 16px;
   }
   .my-swipe .van-swipe-item {
-    color: #fff;
     font-size: 20px;
     line-height: 150px;
+    color: #ffffff;
     text-align: center;
     img {
       width: 90%;
@@ -554,43 +603,43 @@ export default {
   //   background: rgba(0, 0, 0, 0.1);
   // }
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
   .small {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 10px;
     line-height: 22px;
     text-align: right;
-    margin-bottom: 10px;
   }
 
   .xueshu1 {
+    width: 138px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 138px;
   }
   .xueshu2 {
+    width: 136px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 136px;
   }
   .xueshu3 {
+    width: 96px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 96px;
   }
   .xueshu4 {
+    width: 84px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 84px;
   }
   .titlebox {
-    margin: 12px 16px 0;
     padding: 13px 14px;
+    margin: 12px 16px 0;
+    color: #ffffff;
     background: linear-gradient(127deg, #3596ff 0%, #054beb 100%);
     border-radius: 8px;
-    color: #ffffff;
     .line1 {
       font-size: 20px;
       font-weight: 600;
@@ -607,11 +656,11 @@ export default {
     margin: 24px 16px 0 7px;
   }
   .card {
+    padding: 14px 14px 8px;
     margin: 18px 16px 0;
     background: #ffffff;
-    box-shadow: 4px 4px 6px 0px rgba(115, 140, 187, 0.32);
     border-radius: 10px;
-    padding: 14px 14px 8px 14px;
+    box-shadow: 4px 4px 6px 0 rgba(115, 140, 187, 0.32);
     .titleimg {
       width: 99px;
       height: 25px;
@@ -622,8 +671,8 @@ export default {
         display: inline-block;
         width: 10px;
         height: 10px;
-        border-radius: 50%;
         background: #5c5c5c;
+        border-radius: 50%;
       }
       span {
         margin-left: 10px;
@@ -631,9 +680,9 @@ export default {
     }
   }
   .casetext {
-    margin-left: 16px;
     width: 252px;
     height: 65px;
+    margin-left: 16px;
   }
   .feature {
     margin-top: 18px;
@@ -645,13 +694,12 @@ export default {
 
   .casecard {
     margin-top: 12px;
-    background: #ffffff;
-    box-shadow: 4px 4px 6px 0px rgba(115, 140, 187, 0.32);
-    border-radius: 10px;
-
     font-size: 14px;
     font-weight: 500;
     color: #303232;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 0 rgba(115, 140, 187, 0.32);
 
     .header {
       height: 48px;
@@ -671,9 +719,9 @@ export default {
         display: inline-block;
         width: 5px;
         height: 5px;
-        border-radius: 50%;
-        background-color: #2b71fa;
         margin-right: 8px;
+        background-color: #2b71fa;
+        border-radius: 50%;
       }
     }
   }

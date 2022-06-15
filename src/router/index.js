@@ -14,6 +14,7 @@ import Ct from '../views/harsom/contact'
 import Sv from '../views/harsom/service'
 import Comp from '../views/harsom/company'
 import Case from '../views/harsom/case'
+import Ts from '../views/harsom/teacherservice'
 
 const originalPush = VueRouter.prototype.push
 
@@ -94,6 +95,14 @@ routes.push(
       component: Case,
       meta: {
         title: '成功案例'
+      }
+    },
+    {
+      path: '/ts',
+      name: 'teacherservice',
+      component: Ts,
+      meta: {
+        title: '师训服务'
       }
     },
     // 无权限页面

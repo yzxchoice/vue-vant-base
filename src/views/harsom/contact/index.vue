@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../../../assets/contact/联系我们头图.png" alt="" />
+    <img src="../../../assets/contact/联系我们头图@2x.png" alt="" />
 
     <div class="list">
       <div class="item header">
@@ -43,10 +43,10 @@
       </div>
     </div>
 
-    <img src="../../../assets/contact/办事处分布图.png" alt="" />
+    <img src="../../../assets/contact/办事处分布图@2x.png" alt="" />
 
     <div class="copyright">
-      <img src="../../../assets/coursesystem/copyright.png" alt="" />
+      <img src="../../../assets/achievements/底部vi显示备份 3@2x.png" alt="" />
     </div>
   </div>
 </template>
@@ -69,26 +69,35 @@ export default {
 .home {
   /** 审查元素，这个样式会转换为 font-size: 4.267vw; */
   //   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #f9fafb;
   img {
-    width: 100%;
     display: block;
+    width: 100%;
+  }
+  .list {
+    background-color: #fff;
+    margin: 0 4px 4px 4px;
+    border-bottom-left-radius: 10px; //左上角
+    border-bottom-right-radius: 10px; //左下角
   }
   .item {
     padding: 0 26px 24px;
     border-bottom: 2px solid #efefef;
+    &:nth-last-child(1) {
+      border: 0;
+    }
     .title1 {
       font-size: 24px;
       font-weight: 600;
-      color: #000000;
       line-height: 33px;
+      color: #000000;
     }
     .title2 {
+      margin: 23px 0 10px;
       font-size: 16px;
       font-weight: 500;
-      color: #0a0a0a;
       line-height: 22px;
-      margin: 23px 0 10px;
+      color: #0a0a0a;
       &.header {
         margin: 11px 20px;
       }
@@ -96,8 +105,8 @@ export default {
     p {
       font-size: 14px;
       font-weight: 400;
-      color: #303232;
       line-height: 22px;
+      color: #303232;
     }
   }
   .copyright {

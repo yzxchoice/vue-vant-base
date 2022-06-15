@@ -4,21 +4,23 @@
 -->
 <template>
   <div class="home">
-    <van-notice-bar
+    <!-- <van-notice-bar
       scrollable
       text="关注微信公众号【前端有的玩】，我们一起玩前端"
-    />
+    /> -->
     <van-list>
-      <van-cell
+      <!-- <van-cell
         title="点击使用confirm装饰器"
         value="还有更多装饰器哦"
         @click="$_handleUseDecorator"
-      />
-      <van-cell title="加载数据" @click="$_loadData" />
-      <van-cell title="使用日期工具类" :value="`今天是${currentDate}`" />
-      <van-cell title="你看，右下角有一个vConsole,用来调试的" />
-      <van-cell title="你再看，地址栏有一个?VNK=xxx,这是路由缓存" />
-      <van-cell title="点击跳转about页面" @click="goJump" />
+      /> -->
+      <van-cell title="课程体系" @click="gocs" />
+      <van-cell title="学术成果" @click="goac" />
+      <van-cell title="联系我们" @click="goct" />
+      <van-cell title="产品服务" @click="goservice" />
+      <van-cell title="公司介绍" @click="gocompany" />
+      <van-cell title="成功案例" @click="gocase" />
+      <van-cell title="师训服务" @click="gots" />
     </van-list>
   </div>
 </template>
@@ -78,6 +80,27 @@ export default {
     },
     goJump() {
       this.$router.push({ name: 'TestAbout' })
+    },
+    gocs() {
+      this.$router.push({ name: 'cs' })
+    },
+    goac() {
+      this.$router.push({ name: 'ac' })
+    },
+    goct() {
+      this.$router.push({ name: 'ct' })
+    },
+    goservice() {
+      this.$router.push({ name: 'service' })
+    },
+    gocompany() {
+      this.$router.push({ name: 'company' })
+    },
+    gocase() {
+      this.$router.push({ name: 'case' })
+    },
+    gots() {
+      this.$router.push({ name: 'teacherservice' })
     }
   }
 }

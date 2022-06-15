@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../../../assets/achievements/学术成果头图.png" alt="" />
+    <img src="../../../assets/achievements/学术成果头图@2x.png" alt="" />
     <div class="titlebox">
       <div class="line1">智能时代，我们携手共进</div>
       <div class="line2">
@@ -8,19 +8,23 @@
       </div>
     </div>
     <div class="title">
-      <img src="../../../assets/achievements/学术标题1.png" alt="" />
+      <img src="../../../assets/achievements/学术标题1@2x.png" alt="" />
     </div>
 
     <div class="card">
       <div class="xueshu1">
-        <img src="../../../assets/achievements/人工智能教育理念.png" alt="" />
+        <img
+          src="../../../assets/achievements/人工智能教育理念@2x.png"
+          alt=""
+        />
       </div>
 
       迪乐姆人工智能教育，以编程、人工智能知识为载体，融合思维能力培养目标，运用思维型教学方法，引导学生通过项目式学习和动手实践相结合的方式，培养学生跨学科解决问题能力，支持学生核心素养的全面发展。
       <img
-        src="../../../assets/achievements/人工智能教育理念配图.png"
+        src="../../../assets/achievements/人工智能教育理念配图@2x.png"
         alt=""
         class="feature"
+        @click="preview(0)"
       />
       迪乐姆创新性地提出，人工智能核心素养由智能意识、智能观念、智能思维与智能实践力构成。学生在从事人工智能活动时，良好的智能意识能为其提供运用人工智能的相关思想、方法、技术、应用解决问题的内在动机；良好的智能观念则为学生正确使用人工智能提供了保障、明确了方向；良好的智能思维为学生提供了解决问题的方法路径；良好的智能实践力则为学生提供了问题解决所需要的实现路径；而问题解决所形成的经验、成就感等，又进一步促进了智能意识的发展。
       <div class="small">
@@ -31,65 +35,83 @@
       <p></p>
     </div>
     <div class="title">
-      <img src="../../../assets/achievements/学术标题2.png" alt="" />
+      <img src="../../../assets/achievements/学术标题2@2x.png" alt="" />
     </div>
     <div class="card">
       <div class="xueshu2">
-        <img src="../../../assets/achievements/副标题备份 5.png" alt="" />
+        <img src="../../../assets/achievements/副标题备份 5@2x.png" alt="" />
       </div>
       迪乐姆人工智能课程，以学生的问题解决能力为导向，重点关注学生的分解问题和抽象聚焦的计算思维能力，从底层思维方法出发，全面提高学生的基础认知能力，在实际课堂教学的AI应用场景中，通过思维型教学提高学生的创新意识与能力。
       <img
-        src="../../../assets/achievements/编组 3.png"
+        src="../../../assets/achievements/编组 3@2x.png"
         alt=""
         class="feature"
+        @click="preview(1)"
       />
       <div class="xueshu3">
-        <img src="../../../assets/achievements/副标题备份 4.png" alt="" />
+        <img src="../../../assets/achievements/副标题备份 4@2x.png" alt="" />
       </div>
       迪乐姆根据国内外先进课程教学理论，创新提出支持直接落地的FCT教学法，即以思维为中心，以5C为基本环节，以5F为基本策略，将“上好人工智能课”细化为可操作的教学步骤与可习得的教学模式，做好教学理论最后一公里。
       <img
-        src="../../../assets/achievements/编组 4.png"
+        src="../../../assets/achievements/编组 4@2x.png"
         alt=""
         class="feature"
+        @click="preview(2)"
       />
       <div class="xueshu4">
-        <img src="../../../assets/achievements/副标题备份 3.png" alt="" />
+        <img src="../../../assets/achievements/副标题备份 3@2x.png" alt="" />
       </div>
       迪乐姆聚焦“专业师培”这一难题，从顶层设计入手，搭建了KOT人工智能教师胜任力模型，并绘制了教师成长的发展路线，明确了人工智能教师个发展阶段的能力标准。
       <img
-        src="../../../assets/achievements/编组 5.png"
+        src="../../../assets/achievements/编组 5@2x.png"
         alt=""
         class="feature"
+        @click="preview(3)"
       />
       <div class="xueshu1">
-        <img src="../../../assets/achievements/副标题备份.png" alt="" />
+        <img src="../../../assets/achievements/副标题备份@2x.png" alt="" />
       </div>
 
       <img
-        src="../../../assets/achievements/编组 18.png"
+        src="../../../assets/achievements/编组 18@2x.png"
         alt=""
         class="feature"
       />
     </div>
 
     <div class="copyright">
-      <img src="../../../assets/coursesystem/copyright.png" alt="" />
+      <img src="../../../assets/achievements/底部vi显示备份 3@2x.png" alt="" />
     </div>
   </div>
 </template>
 
 <script>
 // 使用vant 组件
+import { ImagePreview } from 'vant'
 
 export default {
   name: 'Home',
   components: {},
   data() {
-    return {}
+    return {
+      images: [
+        require('../../../assets/achievements/人工智能教育理念配图@2x.png'),
+        require('../../../assets/achievements/编组 3@2x.png'),
+        require('../../../assets/achievements/编组 4@2x.png'),
+        require('../../../assets/achievements/编组 5@2x.png')
+      ]
+    }
   },
   created() {},
 
-  methods: {}
+  methods: {
+    preview(index) {
+      ImagePreview({
+        images: this.images,
+        startPosition: index
+      })
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -98,43 +120,43 @@ export default {
   //   font-size: 14px;
   background-color: #eaf1f7;
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
   .small {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 10px;
     line-height: 22px;
     text-align: right;
-    margin-bottom: 10px;
   }
 
   .xueshu1 {
+    width: 138px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 138px;
   }
   .xueshu2 {
+    width: 136px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 136px;
   }
   .xueshu3 {
+    width: 96px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 96px;
   }
   .xueshu4 {
+    width: 84px;
     margin-top: 4px;
     margin-bottom: 14px;
-    width: 84px;
   }
   .titlebox {
-    margin: 12px 16px 0;
     padding: 13px 14px;
+    margin: 12px 16px 0;
+    color: #ffffff;
     background: linear-gradient(127deg, #3596ff 0%, #054beb 100%);
     border-radius: 8px;
-    color: #ffffff;
     .line1 {
       font-size: 20px;
       font-weight: 600;
@@ -151,18 +173,18 @@ export default {
     margin: 24px 16px 0 7px;
   }
   .card {
+    padding: 14px 14px 8px;
     margin: 18px 16px 0;
     background: #ffffff;
-    box-shadow: 4px 4px 6px 0px rgba(115, 140, 187, 0.32);
     border-radius: 10px;
-    padding: 14px 14px 8px 14px;
+    box-shadow: 4px 4px 6px 0 rgba(115, 140, 187, 0.32);
     .secend {
       i {
         display: inline-block;
         width: 10px;
         height: 10px;
-        border-radius: 50%;
         background: #5c5c5c;
+        border-radius: 50%;
       }
       span {
         margin-left: 10px;
